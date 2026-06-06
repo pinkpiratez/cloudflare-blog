@@ -1,0 +1,22 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "test",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2026-06-06",
+	"compatibility_flags": ["nodejs_compat"],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS",
+		"run_worker_first": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "blog-db",
+			"database_id": "97f2b460-5e78-47ad-ae9c-7cb90f68497d"
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}
