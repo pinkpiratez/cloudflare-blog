@@ -8,10 +8,10 @@ const navItems = [
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<div className="flex min-h-[calc(100vh-12rem)] gap-8">
+		<div className="mx-auto flex min-h-screen max-w-[1200px] gap-8 px-6 pt-20 pb-16">
 			<aside className="w-56 shrink-0">
-				<div className="sticky top-8 rounded-xl border border-slate-200 bg-white p-4">
-					<h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-500">
+				<div className="sticky top-16 rounded-[18px] border border-black/8 bg-white p-4 shadow-sm">
+					<h2 className="mb-4 text-[12px] font-semibold uppercase tracking-widest text-[#86868b]">
 						Admin Panel
 					</h2>
 					<nav className="flex flex-col gap-1">
@@ -19,15 +19,15 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 							<Link
 								key={item.href}
 								href={item.href}
-								className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-orange-50 hover:text-orange-600"
+								className="rounded-lg px-3 py-2 text-[14px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] hover:text-[#0071e3]"
 							>
 								{item.label}
 							</Link>
 						))}
-						<hr className="my-2 border-slate-200" />
+						<hr className="my-2 border-black/8" />
 						<Link
 							href="/"
-							className="rounded-lg px-3 py-2 text-sm text-slate-500 hover:bg-slate-50"
+							className="rounded-lg px-3 py-2 text-[14px] text-[#86868b] hover:bg-[#f5f5f7]"
 						>
 							← กลับหน้าเว็บ
 						</Link>
